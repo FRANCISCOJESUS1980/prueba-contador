@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import './ShowCount.css'
 
 function ShowCount({ count }) {
@@ -7,5 +8,7 @@ function ShowCount({ count }) {
     </div>
   )
 }
-
+ShowCount.propTypes = {
+  count: PropTypes.number.isRequired
+}
 export default ShowCount
